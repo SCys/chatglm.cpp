@@ -263,7 +263,7 @@ def main():
         top_p = st.slider(label="Top P", min_value=0.0, max_value=1.0, value=0.8, step=0.01)
         temperature = st.slider(label="Temperature", min_value=0.0, max_value=1.5, value=0.8, step=0.01)
         max_length = st.slider(label="Max Length", min_value=128, max_value=32000, value=2048, step=16)
-        max_context_length = st.slider(label="Max Context Length", min_value=128, max_value=3200, value=1536, step=16)
+        max_context_length = st.slider(label="Max Context Length", min_value=128, max_value=32000, value=1536, step=16)
         system_prompt = st.text_area(label="System Prompt", value=default_system_prompt, height=300)
         if st.button(label="Clear Context", type="primary"):
             st.session_state.messages = []
